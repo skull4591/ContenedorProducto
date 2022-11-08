@@ -11,6 +11,7 @@ List<Producto> listaProducto = new List<Producto>();
 
 ContenerdorUno.Agregar(ProductoUno); ContenerdorUno.Agregar(ProductoDos);
 
+
 if (!ContenerdorUno.Agregar(ProductoTres)) { Console.WriteLine("No se pudo"); }
 
 ContenerdorDos.Agregar(ProductoUno); ContenerdorDos.Agregar(ProductoDos); if (!ContenerdorDos.Agregar(ProductoCuatro))
