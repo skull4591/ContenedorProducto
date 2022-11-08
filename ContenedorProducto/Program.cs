@@ -12,15 +12,31 @@ List<Producto> listaProducto = new List<Producto>();
 ContenerdorUno.Agregar(ProductoUno); ContenerdorUno.Agregar(ProductoDos);
 
 
-if (!ContenerdorUno.Agregar(ProductoTres)) { Console.WriteLine("No se pudo"); }
+if (!ContenerdorUno.Agregar(ProductoTres)) 
 
-ContenerdorDos.Agregar(ProductoUno); ContenerdorDos.Agregar(ProductoDos); if (!ContenerdorDos.Agregar(ProductoCuatro))
-{ Console.WriteLine("No se pudo"); }
+{
+    Console.WriteLine("No se pudo");
+}
+
+
+ContenerdorDos.Agregar(ProductoUno); 
+ContenerdorDos.Agregar(ProductoDos); 
+
+if (!ContenerdorDos.Agregar(ProductoCuatro))
+{ 
+    Console.WriteLine("No se pudo"); 
+}
 ContenerdorDos.Agregar(ProductoTres);
 
-Container.Mostrar(ContenerdorUno); Container.Mostrar(ContenerdorDos);
+Container.Mostrar(ContenerdorUno); 
+Container.Mostrar(ContenerdorDos);
 
 listaProducto = ContenerdorDos - eTipoComestible.Liquido;
-Console.WriteLine("          Lista Extraida             "); foreach (Producto item in listaProducto) { item.mostrar(); }
+
+Console.WriteLine("          Lista Extraida             "); 
+foreach (Producto item in listaProducto) 
+{ 
+    item.mostrar(); 
+}
 Console.ReadLine();
 
